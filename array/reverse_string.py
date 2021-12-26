@@ -19,7 +19,7 @@ print(len(out))
 def reverseStrRecus(str):
   if str=="":
     return str
-  else:
-     return str[-1]+reverseStrRecus(str[:-1])
+  else:        
+     return str[-1]+reverseStrRecus(str[:-1]) '''pyhton use stack when there are multiple functions loaded after one another so it will solve last funtion first and so on. '''
 out=reverseStrRecus(string)
 print(out)
