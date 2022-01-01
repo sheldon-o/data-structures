@@ -1,2 +1,2 @@
 language = "python"
-run = "python array/reverse_string.py"
+run = "python array/merge_sorted_array.py"
