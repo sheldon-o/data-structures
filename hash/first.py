@@ -15,7 +15,7 @@ class Hash():
   
   def set(self,key,value): #this method have some flwws if key is same value will be reutuned ##for first key
      hash=self._hash(key)
-    if not self.data[hash]:
+     if not self.data[hash]:
       self.data[hash]=[[key,value]]
     else:
       self.data[hash].append([key,value])
