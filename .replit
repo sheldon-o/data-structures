@@ -1,2 +1,2 @@
 language = "python"
-run = "python linked_list/first.py"
+run = "python linked_list/doubly_linked.py"

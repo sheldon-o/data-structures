@@ -22,13 +22,13 @@ obj1="dray"
     }
   }
 }'''
-class Node():                                       #Node =[data][next]
+class Node:                                       #Node =[data][next]
   def __init__(self,data=None,next=None):
     self.data=data
     self.next=next
 
 
-class Linkedlist():           #create a head        head= [None]->
+class Linkedlist:           #create a head        head= [None]->
   def __init__(self):
     self.head=None
    
