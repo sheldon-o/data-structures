@@ -12,7 +12,7 @@ basket=['apples','grapes','pears']
 obj1={"a":"true"}
 obj2=obj1
 obj1="dray"
-print(obj1,obj2)
+
 '''linked_list={
   head:{
     value:5,
@@ -58,7 +58,62 @@ class Linkedlist():           #create a head        head= [None]->
         temphead=temphead.next
       temphead.next=Node(value,None)
 
-  def createNew(self,arr):
+  def insertValue(self,lstValue):
+    self.head=None
+    for i in lstValue:
+      self.insertend(i)
+  
+  def getLen(self):
+    itr=self.head
+    count=0
+    while itr:
+      count=count+1
+      itr=itr.next
+    return count
+  def removeat(self,pos):
+    len=self.getLen()
+    if pos>len:
+      return ("out of index ")
+    if pos==0:
+      self.head=self.head.next
+      return
+    else:
+      itr=self.head
+      
+      count=0
+      while count<pos-1:
+        itr=itr.next
+        count=count+1
+      
+      itr.next=itr.next.next
+
+  def insertat(self,pos,value):
+    if pos==0:
+      new=Node(value,self.head)
+      self.head=new
+      return
+    if pos>self.getLen() or pos<0:
+      raise Exception ("invalid index")
+    else:
+      count=0
+      
+      itr=self.head
+      while count<pos-1:
+        count=count+1
+        itr=itr.next
+      temp=itr.next
+      itr.next=Node(value,temp)
+      return
+    print(itr.data)
+
+      
+
+      
+      
+
+      
+      
+
     
       
 
@@ -75,7 +130,18 @@ my.insertBeg(43)
 my.insertend(24)
 my.insertend(90)
 my.insertBeg(89)
+my.insertValue([1,2,3,4,5,6,7])
+my.removeat(5)
+my.removeat(2)
+my.insertat(2,43)
+my.insertat(6,46)
+my.insertat(7,"hohoho")
+my.insertat(0,"wth")
+my.insertend("end")
+my.insertBeg("Beg")
 print(my)
+print(my.getLen())
+
 
   
 
