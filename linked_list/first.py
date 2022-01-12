@@ -142,6 +142,9 @@ my.insertBeg("Beg")
 print(my)
 print(my.getLen())
 
+#Beg --> wth --> 1 --> 2 --> 43 --> 4 --> 5 --> 7 --> 46 --> hohoho --> end
+#11
+
 
   
 
