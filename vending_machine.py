@@ -10,5 +10,6 @@ class VendingMachine():
         return (money-x)
       else:
         return ("not enough coins")
-   else:
-    return ("not enough items in the machine")
+    else:
+      
+      return ("not enough items in the machine")
